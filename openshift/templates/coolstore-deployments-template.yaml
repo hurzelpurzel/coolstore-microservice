@@ -387,11 +387,11 @@ objects:
       spec:
         containers:
         - env:
-          - name: POSTGRESQL_USER
+          - name: POSTGRES_USER
             value: ${INVENTORY_DB_USERNAME}
-          - name: POSTGRESQL_PASSWORD
+          - name: POSTGRES_PASSWORD
             value: ${INVENTORY_DB_PASSWORD}
-          - name: POSTGRESQL_DATABASE
+          - name: POSTGRES_DATABASE
             value: inventorydb
           image: postgresql
           imagePullPolicy: Always
@@ -1362,11 +1362,11 @@ objects:
       spec:
         containers:
         - env:
-          - name: POSTGRESQL_USER
+          - name: POSTGRES_USER
             value: ${REVIEW_DB_USERNAME}
-          - name: POSTGRESQL_PASSWORD
+          - name: POSTGRES_PASSWORD
             value: ${REVIEW_DB_PASSWORD}
-          - name: POSTGRESQL_DATABASE
+          - name: POSTGRES_DATABASE
             value: review
           image: postgresql
           imagePullPolicy: Always
