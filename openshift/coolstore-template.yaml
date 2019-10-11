@@ -1666,7 +1666,7 @@ objects:
     name: turbine-server
   spec:
     port:
-      targetPort: 8080-tcp
+      targetPort: 80-tcp
     to:
       kind: Service
       name: turbine-server
